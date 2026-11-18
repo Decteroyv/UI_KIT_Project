@@ -1,0 +1,3 @@
+/* Minimal low-specificity reset; keep component defaults out of this layer. */
+:where(*, *::before, *::after) { box-sizing: border-box; }
+:where(html) { scroll-behavior: smooth; }

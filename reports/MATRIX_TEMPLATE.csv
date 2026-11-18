@@ -1,15 +1,44 @@
-Компонент;Вариант;Состояние;Тема;Ширина_px;Ожидаемое поведение;Факт_до;Факт_после;Статус_OK_FAIL;Доказательство
-button;primary;default;light;1440;;;;;
-button;primary;focus-visible;dark;375;;;;;
-button;danger;hover;light;768;;;;;
-button;secondary;disabled;dark;320;;;;;
-field;email;untouched-invalid;light;1440;;;;;
-field;email;invalid-after-blur;dark;375;;;;;
-card;featured;long-text;light;320;;;;;
-card;default;nested-alert;dark;375;;;;;
-tag;danger;static;light;375;;;;;
-alert;warning;dark-contrast;dark;375;;;;;
-switch;enabled;keyboard-space;light;375;;;;;
-switch;disabled;tab-skip;dark;375;;;;;
-dialog;open;modal-focus;light;1024;;;;;
-dialog;closed;escape-focus-return;dark;375;;;;;
+﻿Компонент;Вариант;Состояние;Тема;Ширина_px;Ожидаемое поведение;Факт_после;Статус_OK_FAIL;Доказательство
+button;primary;default;light;1440;"Акцентный фон и контрастный текст; токены";"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;primary;hover;dark;375;Hover меняет акцент, не ломает тёмную тему;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;primary;focus-visible;light;768;Виден outline focus;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;secondary;disabled;dark;320;"Нативный disabled; сниженная непрозрачность";"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;ghost;active;light;1024;Нажатие возвращает translateY к 0;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;danger;hover;light;375;Danger использует семантический цвет;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;primary-sm;default;dark;375;Компактный размер без переполнения;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;primary-lg;default;light;1440;Увеличенная высота и размер текста;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+button;primary-long-label;wrap;light;320;Длинная надпись переносится, нет горизонтального overflow;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;required-empty;untouched-invalid;light;1440;До blur aria-invalid отсутствует, ошибка не показана;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;email;invalid-after-blur;dark;375;После blur aria-invalid=true, граница danger;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;email;focus-visible;light;320;Фокус виден, поле не выходит за контейнер;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;text;disabled;dark;768;Disabled поле имеет нейтральный disabled фон;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;textarea;default;light;1024;Textarea занимает ширину контейнера и меняет высоту;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;email-valid;after-input;light;375;После корректного ввода aria-invalid=false;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;required;submit-invalid;dark;1440;Submit помечает пустые required поля;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+field;form-grid;responsive;light;320;Сетка становится одной колонкой;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+card;default;default;light;1440;Карточка использует surface/border/shadow tokens;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+card;featured;default;dark;768;Featured меняет только border-color;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+card;default;long-text-200;light;320;Длинный текст переносится без горизонтального overflow;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+card;default;nested-alert;dark;375;Параграф Alert не наследует типографику карточки;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+card;default;nested-button;light;1024;Вложенная кнопка сохраняет собственный контракт;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+card;grid;responsive;dark;375;Сетка переходит на одну колонку;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+tag;neutral;static;light;375;Нейтральная метка не изображает интерактивность;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+tag;success;static;dark;768;Success цвет из semantic token;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+tag;warning;static;light;1440;Warning цвет из semantic token;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+tag;danger;static;dark;320;Danger независим от кнопок и alert;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+alert;info;default;light;1440;Info использует отдельную роль цвета;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+alert;success;default;dark;375;Success контрастен в тёмной теме;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+alert;warning;default;light;768;Warning не затрагивает другие компоненты;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+alert;danger;dismiss;dark;375;Кнопка закрытия удаляет только своё уведомление;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+alert;stack;restore;light;1024;Восстановление возвращает все четыре уведомления;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+switch;checked;default;light;375;Track отражает checked;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+switch;unchecked;focus-visible;dark;375;Checkbox доступен через Tab, виден focus ring;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+switch;enabled;keyboard-space;light;768;Space переключает состояние;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+switch;disabled;tab-skip;dark;320;Disabled checkbox не переключается;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+switch;checked;active;light;1440;Active feedback не нарушает состояние checked;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+dialog;open;modal-focus;light;1024;showModal открывает top-layer modal;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+dialog;open;escape-focus-return;dark;375;Escape закрывает и возвращает фокус инициатору;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+dialog;open;tab-cycle;light;1440;Фокус остаётся в модальном диалоге;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+dialog;cancel;submit-dialog;dark;375;Кнопка Отмена закрывает dialog;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+dialog;save;submit-dialog;light;768;Кнопка Сохранить закрывает dialog;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона
+dialog;open;narrow-viewport;dark;320;Окно ограничено шириной и высотой viewport;"Код реализован; требуется браузерная фиксация";PENDING_BROWSER;Заполнить скриншотом/DevTools после локального прогона

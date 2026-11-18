@@ -1,4 +1,6 @@
+/* Semantic design tokens: components consume roles, not raw palette values. */
 :root {
+  color-scheme: light;
   --color-canvas: #f3f5fb;
   --color-surface: #ffffff;
   --color-surface-alt: #f8f9ff;
@@ -17,15 +19,42 @@
   --color-warning-bg: #fff5dd;
   --color-info: #1b6094;
   --color-info-bg: #edf6ff;
-  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem;
-  --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem;
-  --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem;
-  --radius-sm: .45rem; --radius-md: .75rem; --radius-lg: 1.1rem;
+  --color-disabled: #8b96aa;
+  --color-disabled-bg: #e8ebf2;
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  --radius-sm: .45rem;
+  --radius-md: .75rem;
+  --radius-lg: 1.1rem;
   --shadow-card: 0 15px 45px rgba(30, 42, 87, .08);
   --control-height: 2.75rem;
   --motion-fast: 160ms;
+  --font-body: 400 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Component tokens */
+  --button-radius: var(--radius-md);
+  --button-padding-block: .65rem;
+  --button-padding-inline: 1.1rem;
+  --field-radius: var(--radius-sm);
+  --field-border: var(--color-border);
+  --card-radius: var(--radius-md);
+  --alert-radius: var(--radius-md);
+  --switch-track: #adb7c6;
+  --switch-thumb: #ffffff;
+  --dialog-radius: var(--radius-lg);
 }
-:root[data-theme='dark'] {
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
   --color-canvas: #10182b;
   --color-surface: #18243d;
   --color-surface-alt: #202e4a;
@@ -44,5 +73,9 @@
   --color-warning-bg: #574223;
   --color-info: #a9d8ff;
   --color-info-bg: #193d5c;
+  --color-disabled: #a0a9ba;
+  --color-disabled-bg: #303b50;
   --shadow-card: 0 15px 45px rgba(0, 0, 0, .18);
+  --switch-track: #65738d;
+  --switch-thumb: #ffffff;
 }

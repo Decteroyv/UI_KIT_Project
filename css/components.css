@@ -98,8 +98,25 @@
   background: var(--color-surface);
   color: var(--color-ink);
 }
-.ui-alert strong { font-size: .9rem; }
-.ui-alert p { margin: .25rem 0 0; font-size: .83rem; }
+/* Content stays together as one flex item; the heading must not split mid-word. */
+.ui-alert__content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.ui-alert strong {
+  display: inline-block;
+  max-width: 100%;
+  font-size: .9rem;
+  line-height: 1.3;
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+.ui-alert p {
+  margin: .25rem 0 0;
+  font-size: .83rem;
+  overflow-wrap: break-word;
+}
 .ui-alert--info { background: var(--color-info-bg); border-color: var(--color-info); color: var(--color-info); }
 .ui-alert--success { background: var(--color-success-bg); border-color: var(--color-success); color: var(--color-success); }
 .ui-alert--warning { background: var(--color-warning-bg); border-color: var(--color-warning); color: var(--color-warning); }
